@@ -28,11 +28,11 @@ def test_create_user_missing_field():
     response = requests.post(f"{BASE_URL}/users", json=payload, headers=HEADERS)
 
     print("Response:", response.status_code, response.text)
-    assert response.status_code in [201, 400, 422], "Unexpected status code for incomplete user creation"
+    assert response.status_code in [400, 404, 422], "Unexpected status code for incomplete user creation"
 
 # Test: Requesting non-existent user (should return 404)
 def test_get_user_not_found():
     response = requests.get(f"{BASE_URL}/users/9999", headers=HEADERS)
 
     print("Response:", response.status_code, response.text)
-    assert response.status_code in [404, 400, 401], "Expected not found or client error status"
+    assert response.status_code in [404], "Expected not found or client error status"
