@@ -7,8 +7,7 @@ This repository contains API and UI automation test cases for the QA Automation 
 QA Automation Intern Assignment/   
 ├── tests/                 
 │   ├── api_tests.py      
-│   └── ui_tests.py       
-├── load_test.py           
+│   └── ui_tests.py                 
 ├── requirements.txt      
 └── README.md            
 
@@ -45,15 +44,6 @@ python tests/ui_tests.py
 
 > Headless Chrome browser is used for automation on `https://www.iamdave.ai`.
 
-### 4. Run Load Test (Optional Bonus)
-
-```bash
-locust -f load_test.py --host=https://reqres.in
-```
-
-Visit `http://localhost:8089` in your browser and simulate up to 5–10 concurrent users.
-
-
 ## Test Design Summary
 
 This test suite is designed to ensure both API and UI components meet quality standards through thorough validation and automation.
@@ -72,15 +62,9 @@ This test suite is designed to ensure both API and UI components meet quality st
   - Implemented visibility and interactivity checks with `WebDriverWait` for dynamic content.
   - Tests are designed to work in headless mode using Chrome for CI/CD compatibility.
 
-- ✅ Load Test (Bonus)
-  - Implemented using `Locust` to simulate realistic concurrent user traffic.
-  - Tests the `/api/users` endpoint under 5–10 users with staggered wait times.
-  - Validates performance and stability under light load conditions.
-
 Each test was designed with clarity, reliability, and reusability in mind, simulating how real users interact with APIs and UI components.
 
 ## Notes
 
 - Selenium tests run in **headless mode** using ChromeDriver, suitable for CI environments.
 - API tests are implemented using `pytest` and `requests`.
-- Load testing with `Locust` is optional and included for performance demonstration.
