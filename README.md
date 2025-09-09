@@ -5,10 +5,10 @@ This repository contains API and UI automation test cases for the QA Automation 
 ## 📁 Project Structure
 
 QA Automation Intern Assignment/
+
 ├── tests/
 │   ├── api_tests.py       # API tests using pytest
 │   └── ui_tests.py        # UI automation tests using Selenium
-├── load_test.py           # Optional load test using Locust
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
 
