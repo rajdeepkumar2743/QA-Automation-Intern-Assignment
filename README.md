@@ -4,7 +4,7 @@ This repository contains API and UI automation test cases for the QA Automation 
 
 ## 📁 Project Structure
 
-QA Automation Intern Assignment/
+QA Automation Intern Assignment/                             
 ├── tests/
 │   ├── api_tests.py      
 │   └── ui_tests.py        
